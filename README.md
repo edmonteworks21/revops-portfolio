@@ -16,6 +16,12 @@ progress, updated as I go.
 - **automations** — GTM and marketing workflows, including AI-assisted steps
 - **salesforce-sql** — Salesforce work and SQL projects
 
+## Selected Websites 
+- CoinStructive: https://www.coinstructive.com/
+- DemandReach Marketing: https://demandreachmarketing.com/
+- DeLaineDifference: https://www.delainedifference.com/
+- RevHC: https://revhc.com/
+
 ## Contact
 
 - Email: eduardo.montenegro42@gmail.com
