@@ -1,12 +1,10 @@
 # Eduardo Montenegro
 
 Digital marketing and web operations professional with 13+ years across
-web experience, lifecycle marketing, analytics, and cross-functional delivery,
-currently building toward revenue operations and marketing-ops-engineering.
+web experience, lifecycle marketing, analytics, and cross-functional delivery.
 
 This repository is a working portfolio: proof points I'm building as I grow my
-skills in AI-assisted workflows, marketing automation, and data. It's a work in
-progress, updated as I go.
+skills in AI-assisted workflows, marketing automation, and data.
 
 ## What's here
 
