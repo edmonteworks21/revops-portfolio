@@ -32,15 +32,6 @@ So the work was not a deliverability rescue. It was making sure one would never 
 
 Send volume grew from a prior maximum of 200 recipients to over 2,800. On a representative campaign at that volume, 2,716 of 2,818 messages were delivered, with 8 bounces, 6 unsubscribes, and no spam complaints recorded.
 
----
-
-## What I would do differently
-
-**Measure inbox placement, not delivery rate.** Delivered over sent is a bounce metric. It tells you the address exists and the server accepted the message. It does not tell you whether the message landed in the inbox or the spam folder, and those two outcomes look identical in platform reporting. Seed list testing or a placement monitoring tool would give the real number. I would want that instrumented before the program scaled again.
-
-**Plan the volume ramp deliberately.** The growth here worked, but it was managed rather than staged. A formal warm up schedule, increasing volume in planned increments while watching engagement at each step, is the version I would run with a new domain or a larger jump.
-
-**Monitor reputation continuously.** Google Postmaster Tools and equivalent feeds turn sender reputation from something you find out about after a problem into something you watch before one.
 
 ---
 
