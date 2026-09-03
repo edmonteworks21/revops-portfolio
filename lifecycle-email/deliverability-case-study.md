@@ -16,15 +16,15 @@ So the work was not a deliverability rescue. It was making sure one would never 
 
 ## What I did
 
-## Authentication.## Configured SPF, DKIM, and DMARC so receiving servers could verify that mail claiming to come from the client actually did. Without these, mail from a growing sender looks exactly like mail from someone spoofing that sender.
+**Authentication.** Configured SPF, DKIM, and DMARC so receiving servers could verify that mail claiming to come from the client actually did. Without these, mail from a growing sender looks exactly like mail from someone spoofing that sender.
 
-## Sending domain.## Verified that campaigns were going out from the authenticated domain rather than a generic or mismatched address. This is the part that is easy to get wrong quietly. Everything looks fine in the platform, the mail still sends, and the reputation being built accrues to the wrong place or to nowhere.
+**Sending domain.** Verified that campaigns were going out from the authenticated domain rather than a generic or mismatched address. This is the part that is easy to get wrong quietly. Everything looks fine in the platform, the mail still sends, and the reputation being built accrues to the wrong place or to nowhere.
 
-## Consent. ## Implemented double opt in so every address on the list had a verifiable moment of agreement behind it, and put a one click unsubscribe in the footer of every send. The unsubscribe matters more than it looks. A person who cannot find the unsubscribe hits the spam button instead, and a spam complaint costs far more than a lost subscriber.
+**Consent.** Implemented double opt in so every address on the list had a verifiable moment of agreement behind it, and put a one click unsubscribe in the footer of every send. The unsubscribe matters more than it looks. A person who cannot find the unsubscribe hits the spam button instead, and a spam complaint costs far more than a lost subscriber.
 
-## List hygiene. ## Removed contacts showing no engagement over time. Cleaned column mapping on list uploads so imported data landed in the right properties rather than creating malformed records that would later fail or misfire in segmentation.
+**List hygiene.** Removed contacts showing no engagement over time. Cleaned column mapping on list uploads so imported data landed in the right properties rather than creating malformed records that would later fail or misfire in segmentation.
 
-##Engagement based sending.## Built suppression so contacts who stopped engaging stopped receiving campaigns until they re initiated on their own. This is the piece most programs skip. Continuing to mail people who ignore you is the fastest way to teach a mailbox provider that your mail belongs in spam, and it degrades delivery for the people who do want to hear from you.
+**Engagement based sending.** Built suppression so contacts who stopped engaging stopped receiving campaigns until they re initiated on their own. This is the piece most programs skip. Continuing to mail people who ignore you is the fastest way to teach a mailbox provider that your mail belongs in spam, and it degrades delivery for the people who do want to hear from you.
 
 ---
 
@@ -36,11 +36,11 @@ Send volume grew from a prior maximum of 200 recipients to over 2,800. On a repr
 
 ## What I would do differently
 
-##Measure inbox placement, not delivery rate.## Delivered over sent is a bounce metric. It tells you the address exists and the server accepted the message. It does not tell you whether the message landed in the inbox or the spam folder, and those two outcomes look identical in platform reporting. Seed list testing or a placement monitoring tool would give the real number. I would want that instrumented before the program scaled again.
+**Measure inbox placement, not delivery rate.** Delivered over sent is a bounce metric. It tells you the address exists and the server accepted the message. It does not tell you whether the message landed in the inbox or the spam folder, and those two outcomes look identical in platform reporting. Seed list testing or a placement monitoring tool would give the real number. I would want that instrumented before the program scaled again.
 
-##Plan the volume ramp deliberately.## The growth here worked, but it was managed rather than staged. A formal warm up schedule, increasing volume in planned increments while watching engagement at each step, is the version I would run with a new domain or a larger jump.
+**Plan the volume ramp deliberately.** The growth here worked, but it was managed rather than staged. A formal warm up schedule, increasing volume in planned increments while watching engagement at each step, is the version I would run with a new domain or a larger jump.
 
-##Monitor reputation continuously.## Google Postmaster Tools and equivalent feeds turn sender reputation from something you find out about after a problem into something you watch before one.
+**Monitor reputation continuously.** Google Postmaster Tools and equivalent feeds turn sender reputation from something you find out about after a problem into something you watch before one.
 
 ---
 
